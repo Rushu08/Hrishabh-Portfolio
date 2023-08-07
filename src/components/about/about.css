@@ -1,0 +1,71 @@
+.a{
+    height: 100vh;
+    display: flex;
+    padding: 50px;
+}
+.a-left{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.a-right{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.a-title{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.a-title svg{
+    color: #6E57E0;
+    font-size: 3rem;
+    margin-right: 10px;
+}
+.a-card{
+    width: 40%;
+}
+
+.a-img{
+    width: 100%;
+}
+.a-res-btn{
+    padding: 10px 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.a-res-btn svg{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:480px){
+    .a{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .a-card{
+        width: 80%;
+    }
+    .a-title {
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+    .a-res-btn{
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .a-desc{
+    font-size: 0.8rem;
+}
+}

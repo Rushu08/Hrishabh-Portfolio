@@ -1,0 +1,134 @@
+.c{
+    height: 100vh;
+    position: relative;
+}
+.c-bg{
+    background-color: #6e57e0;
+    width:20px;
+    height: 100%;
+    position: absolute;
+}
+.c-wrapper{
+    display: flex;
+    padding: 50px;
+}
+.c-left{
+    flex: 1;
+}
+.c-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.c-title svg{
+font-size: 3rem;
+}
+.c-info{
+    margin: 30px;
+}
+.c-info-item{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.c-info-item svg{
+ padding: 10px;
+ border-radius: 50%;
+ font-size: 1.5rem;
+ margin-right: 10px;
+}
+.phone{
+   background-color:  #6e57e0;
+   color: white ;
+}
+.mail{
+    background-color:  #6e57e0;
+    color: white ;
+ }
+ .location{
+    background-color:#6e57e0;
+    color: white ;
+ }
+.c-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    margin-top: 20px;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #6e57e0;
+   margin :20px 0;
+    font-size: 15px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    font-size: 15px;
+    margin:10px 0;
+    outline: none;
+    border: none;
+    border: 1px solid #6e57e0;
+    resize: none ;
+}
+button{
+    border: none;
+    padding: 10px 50px ;
+    color: white;
+    background-color: #6e57e0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.c-send-btn{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+.c-send-btn svg{
+    font-size: 2rem;
+}
+@media screen and (max-width:480px){
+    .c-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .c-title{
+        font-size: 2rem;
+    }
+    .c-left{
+        margin-left: 10px;
+    }
+    .c-info{
+        margin: 10px;
+    }
+    .c-info-item p{
+        font-size: 1rem;
+    }
+    .c-info-item svg{
+        font-size: 1.5rem;
+    }
+
+    form{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+    }
+    input{
+        width:35%;
+        margin: 10px;
+    }
+    .c-send-btn{
+        font-size: 1rem;
+    }
+}

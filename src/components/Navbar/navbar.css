@@ -1,0 +1,63 @@
+.n{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 3px solid rgb(116, 113, 113);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 50;
+}
+.n-logo img{
+    width: 60%;
+}
+.n-nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+.n-nav-list  li a{
+      margin: 0 10px;
+       color: black;
+       text-transform: uppercase;
+       text-decoration: none;
+       font-weight: 600;
+}
+.n-nav-list li :hover{
+    color: #6C63FF;
+}
+.menu{
+    font-size: 2.2rem;
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+}
+
+@media (max-width:600px){
+    .n-logo {
+       text-align: center;
+    }
+    .menu{
+        display: flex;
+    }
+    .n{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+   
+    .n-nav-list {
+       padding: 0;
+       width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .n-nav-list  li{
+        text-align: center;
+    }
+}
+
